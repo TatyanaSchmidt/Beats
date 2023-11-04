@@ -80,7 +80,7 @@ footer {
   position: absolute;
   bottom: -25px;
   right: 20%;
-  content: url("../img/Rectangle-diag.png");
+  content: url("./../img/Rectangle-diag.png");
 }
 
 .hero__container {
@@ -156,7 +156,7 @@ footer {
   width: 14px;
   height: 14px;
   margin-right: 6px;
-  background: url("../../img/phone.png");
+  background: url("./../img/phone.png");
 }
 
 .feature__list {
@@ -274,7 +274,7 @@ footer {
   position: absolute;
   bottom: -7px;
   left: 15%;
-  content: url("../../img/red-triangle.png");
+  content: url("./../img/red-triangle.png");
 }
 
 .advantage__list {
@@ -291,7 +291,7 @@ footer {
   padding-right: 9%;
 }
 .advantage__item:before {
-  content: url("../../img/why-combined-circle.png");
+  content: url("./../img/why-combined-circle.png");
   position: absolute;
   top: 55px;
   left: 0;
@@ -344,7 +344,7 @@ footer {
   position: absolute;
   bottom: -21px;
   left: 17%;
-  content: url("../../img/gray-circle.png");
+  content: url("./../img/gray-circle.png");
 }
 
 .review__fullview {
@@ -481,7 +481,7 @@ footer {
   position: absolute;
   top: -25px;
   right: 18%;
-  content: url("../../img/red-pentagon.png");
+  content: url("./../img/red-pentagon.png");
 }
 
 .form {
@@ -570,7 +570,7 @@ footer {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../../img/checkmark.png) center center no-repeat;
+  background: url(./../img/checkmark.png) center center no-repeat;
 }
 
 .radio__elem {
