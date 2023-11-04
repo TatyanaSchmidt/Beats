@@ -80,7 +80,7 @@ footer {
   position: absolute;
   bottom: -25px;
   right: 20%;
-  content: url("../../img/Rectangle-diag.png");
+  content: url("../img/Rectangle-diag.png");
 }
 
 .hero__container {
@@ -97,7 +97,7 @@ footer {
   height: 100%;
   padding-top: 24px;
   padding-bottom: 64px;
-  background: url("./../../img/headphones.png") right 5% bottom 33% no-repeat;
+  background: url("./../img/headphones.png") right 5% bottom 33% no-repeat;
 }
 
 .hero__title {
