@@ -1,0 +1,16 @@
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline__title{
+  margin-bottom: 18px;
+}
+
+.headline__subtitle{
+  align-self: center;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 62px;
+}

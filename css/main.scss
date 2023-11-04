@@ -1,0 +1,26 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+$lightGray:#F5F5F5;
+$Gray: #999999;
+$redOrange: #E01F3D;
+$Raspberry: #CA1B36;
+
+$z-fixed-menu:100;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Open+Sans:wght@400;700;800&family=Play:wght@400;700&display=swap');
+@import 'layout';
+@import 'components/hero';
+@import 'components/header';
+@import 'components/feature';
+@import 'components/btn';
+@import 'components/section';
+@import 'components/headline';
+@import 'components/advantage';
+@import 'components/review';
+@import 'components/interactive-avatar';
+@import 'components/order';
+@import 'components/form';
+@import 'components/radio';
+@import 'components/fixed-menu';

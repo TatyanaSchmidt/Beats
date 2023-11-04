@@ -1,0 +1,75 @@
+.advantage-section {
+  position: relative;
+  margin-top: 8px;
+
+  &:before{
+    position: absolute;
+    bottom: -7px;
+    left: 15%;
+    content: url('../../img/red-triangle.png');
+  }
+
+}
+
+
+.advantage__list {
+  display: flex;
+}
+
+.advantage__item {
+  position: relative;
+  flex: 1;
+  padding-right: 9%;
+
+  &:before {
+    content: url('../../img/why-combined-circle.png');
+    position: absolute;
+    top: 55px;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  &:first-child{
+    &:before {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+}
+
+.advantage{
+  text-align: center;
+}
+
+.advantage__img-wrapper{
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  background-color: #F2F5F4;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.advantage__img-icon{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.advantage__title {
+  color: #292929;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0px;
+  
+}

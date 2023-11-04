@@ -1,0 +1,94 @@
+.review-section {
+  position: relative;
+
+  &:before{
+    position: absolute;
+    bottom: -21px;
+    left: 17%;
+    content: url('../../img/gray-circle.png');
+  }
+
+}
+
+
+.review__fullview {
+  background-color: #F8FAF9;
+  padding-left: 38px;
+  padding-top: 29px;
+  padding-bottom: 42px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -61px;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.review__fullview-inner {
+  display: flex;
+
+}
+
+.review__avatar{
+  width: 253px;
+  height: 264px;
+}
+
+.review__avatar-img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.review__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-left: 40px;
+  margin-right: 150px;
+}
+
+.review__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 27px;
+  color: #292929;
+  
+}
+
+.review__text{
+  line-height: 18.51px;
+  margin-bottom: 36px;
+}
+
+.review_author {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.review__switch-list {
+  display: flex;
+  justify-content: center;
+}
+
+.review__switch-item {
+  margin-right: 6px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
