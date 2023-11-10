@@ -13,7 +13,15 @@
 
 .form__row{
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  &--textarea{
+    margin-bottom: 32px;
+  }
 }
 
 .form__block {
@@ -50,11 +58,9 @@
 .form__controls{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 42px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 
   &--radio{
     margin-top: 0;
-    margin-bottom: 30px;
   }
 }

@@ -35,7 +35,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0;
+  margin: 0;
   font-weight: normal;
 }
 
@@ -234,6 +234,7 @@ footer {
   color: #292929;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .section__title-theme-white {
@@ -272,7 +273,7 @@ footer {
 }
 .advantage-section:before {
   position: absolute;
-  bottom: -7px;
+  bottom: -15px;
   left: 15%;
   content: url("./../img/red-triangle.png");
 }
@@ -288,7 +289,7 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-right: 9%;
+  padding-right: 6%;
 }
 .advantage__item:before {
   content: url("./../img/why-combined-circle.png");
@@ -309,6 +310,10 @@ footer {
   text-align: center;
 }
 
+.advantage__img {
+  margin-bottom: 22px;
+}
+
 .advantage__img-wrapper {
   display: inline-block;
   width: 128px;
@@ -317,7 +322,6 @@ footer {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
 }
 
 .advantage__img-icon {
@@ -334,7 +338,7 @@ footer {
   color: #292929;
   font-weight: 700;
   font-size: 24px;
-  line-height: 0px;
+  margin-bottom: 9px;
 }
 
 .review-section {
@@ -350,7 +354,8 @@ footer {
 .review__fullview {
   background-color: #F8FAF9;
   padding-left: 38px;
-  padding-top: 29px;
+  padding-right: 105px;
+  padding-top: 41px;
   padding-bottom: 42px;
   margin-bottom: 15px;
   overflow: hidden;
@@ -403,7 +408,6 @@ footer {
       -ms-flex: 1;
           flex: 1;
   margin-left: 40px;
-  margin-right: 150px;
 }
 
 .review__title {
@@ -416,7 +420,7 @@ footer {
 
 .review__text {
   line-height: 18.51px;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .review_author {
@@ -504,7 +508,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
+}
+.form__row:last-child {
+  margin-bottom: 0;
+}
+.form__row--textarea {
+  margin-bottom: 32px;
 }
 
 .form__block {
@@ -543,12 +553,10 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 42px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 .form__controls--radio {
   margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .radio {
@@ -560,7 +568,6 @@ footer {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-bottom: 16px;
   margin-right: 24px;
 }
 .radio:last-child {
@@ -605,11 +612,14 @@ footer {
 .fixed-menu {
   position: fixed;
   top: 38%;
-  right: 14%;
+  right: 12%;
 }
 
 .fixed-menu__item {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #E01F3D;

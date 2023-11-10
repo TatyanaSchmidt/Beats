@@ -5,7 +5,7 @@
     position: absolute;
     bottom: -21px;
     left: 17%;
-    content: url('../../img/gray-circle.png');
+    content: url('./../img/gray-circle.png');
   }
 
 }
@@ -14,7 +14,8 @@
 .review__fullview {
   background-color: #F8FAF9;
   padding-left: 38px;
-  padding-top: 29px;
+  padding-right: 105px;
+  padding-top: 41px;
   padding-bottom: 42px;
   margin-bottom: 15px;
   overflow: hidden;
@@ -56,7 +57,7 @@
   justify-content: center;
   flex: 1;
   margin-left: 40px;
-  margin-right: 150px;
+  // margin-right: 150px;
 }
 
 .review__title {
@@ -70,7 +71,7 @@
 
 .review__text{
   line-height: 18.51px;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .review_author {
