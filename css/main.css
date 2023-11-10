@@ -508,7 +508,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 9px;
+  margin-bottom: 16px;
 }
 .form__row:last-child {
   margin-bottom: 0;
