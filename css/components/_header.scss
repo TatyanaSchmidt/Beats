@@ -1,30 +1,14 @@
 .header {
-  font-size: 18px;
+  font-size: rem(18px);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 915px;
+  align-items: flex-start;
+  max-width: rem(915px);
 }
 
-.menu__list {
-  display: flex;
-  align-items: center;
-}
-
-.menu__item {
-  font-family: 'Alegreya Sans', sans-serif;
-  margin-right: 27px;
-
-  &:last-child {
-    margin-right: 0;
+.header__phone-number{
+  @include tablets {
+    display: none;
   }
 }
 
-.phone-number:before {
-  content:'';
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
-  background: url('./../img/phone.png') ;
-}

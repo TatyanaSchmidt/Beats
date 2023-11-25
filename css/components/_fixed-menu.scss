@@ -1,11 +1,15 @@
 .fixed-menu{
   position: fixed;
   top: 38%;
-  right: 12%;
+  right: 8%;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
-  margin-bottom:5px;
+  margin-bottom:rem(5px);
 
   &:last-child {
     margin-bottom: 0;
@@ -25,9 +29,9 @@
 }
 
 .fixed-menu__link {
-  height: 16px;
-  width: 16px;
-  border: 1px solid transparent;
+  height: rem(16px);
+  width: rem(16px);
+  border: rem(1px) solid transparent;
   border-radius: 50%;
   display: block;
   position: relative;
@@ -39,8 +43,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    height: 6px;
-    width: 6px;
+    height: rem(6px);
+    width: rem(6px);
     border-radius: 50%;
     background: #292929;
   }

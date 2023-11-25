@@ -1,11 +1,15 @@
 .btn {
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   background-color: $redOrange;
   color: #FFFFFF;
-  border-radius: 100px;
+  border-radius: rem(100px);
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+
+  @include phones{
+    font-size: rem(19px);
+  }
 
   &:hover {
     background-color: $Raspberry;
@@ -16,7 +20,7 @@
 
   background-color: transparent;
   color: #FFFFFF;
-  border-radius: 100px;
+  border-radius: rem(100px);
   text-transform:capitalize;
   font-weight: 400;
 

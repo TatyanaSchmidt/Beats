@@ -1,10 +1,10 @@
 .advantage-section {
   position: relative;
-  margin-top: 8px;
+  margin-top: rem(8px);
 
   &:before{
     position: absolute;
-    bottom: -15px;
+    bottom: rem(-15px);
     left: 15%;
     content: url('./../img/red-triangle.png');
   }
@@ -14,6 +14,10 @@
 
 .advantage__list {
   display: flex;
+
+  @include phones{
+    flex-direction: column;
+  }
 }
 
 .advantage__item {
@@ -21,12 +25,22 @@
   flex: 1;
   padding-right: 6%;
 
+  @include phones{
+    display: flex;
+    padding-right: 0;
+
+  }
+
   &:before {
     content: url('./../img/why-combined-circle.png');
     position: absolute;
-    top: 55px;
+    top: rem(55px);
     left: 0;
     transform: translateX(-100%);
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:first-child{
@@ -46,13 +60,17 @@
 }
 
 .advantage__img {
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
+
+  @include phones{
+    margin-right: rem(12px);
+  }
 }
 
 .advantage__img-wrapper{
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   background-color: #F2F5F4;
   border-radius: 50%;
   position: relative;
@@ -60,8 +78,8 @@
 }
 
 .advantage__img-icon{
-  width: 60px;
-  height: 60px;
+  width: rem(60px);
+  height: rem(60px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,6 +90,12 @@
 .advantage__title {
   color: #292929;
   font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 9px;
+  font-size: rem(24px);
+  margin-bottom: rem(9px);
+}
+
+.advantage__text{
+  @include phones{
+    text-align: left;
+  }
 }

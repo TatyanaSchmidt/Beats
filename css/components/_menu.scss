@@ -1,0 +1,29 @@
+.menu{
+  padding-top: 10px;
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.menu__item {
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-right: rem(27px);
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link{
+  white-space: nowrap;
+}
+

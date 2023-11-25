@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
@@ -24,7 +25,17 @@
                   <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
-              <a href="tel:+78009039090" class="phone-number">8 800 903 90 90</a>
+              <div class="phone">
+                <svg class="phone-icon">
+                  <use xlink:href="./img/sprite.svg#phone"></use>
+                </svg>
+                <a href="tel:+78009039090" class="phone-number header__phone-number">8 800 903 90 90</a>
+              </div>
+              <a href="" class="hamburger">
+                <span class="hamburger__plank"></span>
+                <span class="hamburger__plank"></span>
+                <span class="hamburger__plank"></span>
+              </a>
             </header>
             <div class="hero__title">
               <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
@@ -34,16 +45,25 @@
             <div class="hero__feature">
               <ul class="feature__list">
                 <li class="feature__item feature">
-                  <div class="feature__icon">
-                    <img src="./img/ear.png" alt="ear hears music" class="feature__img"></div>
+                  <div class="feature__icon">                
+                    <svg class="feature__icon">
+                      <use xlink:href="./img/sprite.svg#ear"></use>
+                    </svg>
+                  </div>  
                   <div class="feature__text">Безупречный звук</div></li>
                 <li class="feature__item feature">
                   <div class="feature__icon">
-                    <img src="./img/battery.png" alt="battery charge" class="feature__img"></div>
+                    <svg class="feature__icon">
+                      <use xlink:href="./img/sprite.svg#battery"></use>
+                    </svg>
+                  </div>
                   <div class="feature__text">До 40 часов работы</div></li>
                 <li class="feature__item feature">
                   <div class="feature__icon">
-                    <img src="./img/electric-plug.png" alt="electric plug" class="feature__img"></div>
+                    <svg class="feature__icon">
+                      <use xlink:href="./img/sprite.svg#electric-plug"></use>
+                    </svg>
+                  </div>
                   <div class="feature__text">Технология Fast Fuel</div></li>
               </ul>
             </div>
@@ -61,7 +81,9 @@
               <li class="advantage__item advantage">
                 <div class="advantage__img">
                   <div class="advantage__img-wrapper">
-                    <img src="./img/why-battery.png" alt="battery icon" class="advantage__img-icon">
+                    <svg class="advantage__img-icon">
+                      <use xlink:href="./img/sprite.svg#why-battery"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="advantage__desc">
@@ -76,7 +98,9 @@
               <li class="advantage__item advantage">
                 <div class="advantage__img">
                   <div class="advantage__img-wrapper">
-                    <img src="./img/why-sound.png" alt="sound icon" class="advantage__img-icon">
+                    <svg class="advantage__img-icon">
+                      <use xlink:href="./img/sprite.svg#why-sound"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="advantage__desc">
@@ -92,7 +116,9 @@
               <li class="advantage__item advantage">
                 <div class="advantage__img">
                   <div class="advantage__img-wrapper">
-                    <img src="./img/why-time.png" alt="clock icon" class="advantage__img-icon">
+                    <svg class="advantage__img-icon">
+                      <use xlink:href="./img/sprite.svg#why-time"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="advantage__desc">
@@ -187,7 +213,7 @@
                 </div>
               </div>
               <div class="form__col">
-                <div class="form__row">
+                <div class="form__row form__row--textarea">
                   <label class="form__block">
                     <div class="form__title">Комментарий</div>
                     <textarea class="form__input form__input--textarea"></textarea>
@@ -218,6 +244,49 @@
                 </div>
               </div>
             </form>
+          </div>
+        </section>
+        <section class="section map-section">
+            <div class="map"></div>
+            <footer class="footer">
+              <div class="container footer__container">
+                <address class="contact">
+                  <div class="contact__address">Москва, ул.Новый Арбат, д.31/12</div>
+                  <a href="tel:+78009039090" class="phone-number">8 800 903 90 90</a>
+                </address>
+                  <div class="socials">
+                    <ul class="socials__list">
+                      <li class="socials__item socials__item--vk">
+                        <a href="#" class="socials__link">
+                          <svg class="socials__link-vk">
+                            <use xlink:href="./img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item socials__item--fb">
+                        <a href="#" class="socials__link">
+                          <svg class="socials__link-fb">
+                            <use xlink:href="./img/sprite.svg#fb"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item socials__item--insta">
+                        <a href="#" class="socials__link">
+                          <svg class="socials__link-insta">
+                            <use xlink:href="./img/sprite.svg#insta"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item socials__item--tg">
+                        <a href="#" class="socials__link">
+                          <svg class="socials__link-tg">
+                            <use xlink:href="./img/sprite.svg#tg"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+            </footer>
           </div>
         </section>
       </div>

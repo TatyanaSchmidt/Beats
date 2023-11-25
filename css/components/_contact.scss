@@ -1,0 +1,14 @@
+.contact{
+  @include phones{
+    text-align: center;
+    font-style: normal;
+    margin-bottom: rem(12px);
+  }
+}
+
+.contact__address{
+  @include phones{
+    font-size: rem(18px);
+    margin-bottom: rem(12px);
+  }
+}

@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+}
+
 html, body {
   height: 100%;
 }
@@ -10,7 +22,6 @@ body {
   margin: 0;
   padding: 0;
   color: #666666;
-  font-size: $baseFontSize;
   font-family: 'Play', Arial, Helvetica, sans-serif;
   line-height: 1.16;
   font-style: normal;
@@ -57,12 +68,12 @@ footer {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
 }

@@ -3,7 +3,7 @@
 
   &:before{
     position: absolute;
-    bottom: -21px;
+    bottom: rem(-21px);
     left: 17%;
     content: url('./../img/gray-circle.png');
   }
@@ -13,11 +13,11 @@
 
 .review__fullview {
   background-color: #F8FAF9;
-  padding-left: 38px;
-  padding-right: 105px;
-  padding-top: 41px;
-  padding-bottom: 42px;
-  margin-bottom: 15px;
+  padding-left: rem(38px);
+  padding-right: rem(105px);
+  padding-top: rem(41px);
+  padding-bottom: rem(42px);
+  margin-bottom: rem(15px);
   overflow: hidden;
   position: relative;
   
@@ -27,22 +27,36 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -61px;
-    width: 83px;
-    height: 83px;
+    top: rem(-61px);
+    width: rem(83px);
+    height: rem(83px);
     border-radius: 50%;
     background-color: #fff;
+  }
+
+  @include tablets {
+    padding:  rem(56px) rem(23px) rem(10px) rem(23px);
   }
 }
 
 .review__fullview-inner {
   display: flex;
 
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .review__avatar{
-  width: 253px;
-  height: 264px;
+  width: rem(253px);
+  height: rem(264px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .review__avatar-img{
@@ -56,26 +70,30 @@
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  margin-left: 40px;
-  // margin-right: 150px;
+  margin-left: rem(40px);
+
+  @include tablets {
+    margin-left:  rem(0px);
+  }
+
 }
 
 .review__title {
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 700;
-  margin-top: 5px;
-  margin-bottom: 27px;
+  margin-top: rem(5px);
+  margin-bottom: rem(27px);
   color: #292929;
   
 }
 
 .review__text{
-  line-height: 18.51px;
-  margin-bottom: 42px;
+  line-height: rem(18.51px);
+  margin-bottom: rem(42px);
 }
 
 .review_author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 700;
   color: #292929;
 }
@@ -86,7 +104,7 @@
 }
 
 .review__switch-item {
-  margin-right: 6px;
+  margin-right: rem(6px);
 
   &:last-child{
     margin-right: 0;
