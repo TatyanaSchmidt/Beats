@@ -6,9 +6,5 @@
   max-width: rem(915px);
 }
 
-.header__phone-number{
-  @include tablets {
-    display: none;
-  }
-}
+
 
